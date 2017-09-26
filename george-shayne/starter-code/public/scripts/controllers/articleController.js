@@ -9,7 +9,7 @@ var app = app || {};
   articleController.displayArticles = function() {
     module.Article.fetchAll(module.articleView.initIndexPage);
     $('#about').hide();
-    $('#article').show();
+    $('#articles').show();
   }
   module.articleController = articleController;
 })(app);
