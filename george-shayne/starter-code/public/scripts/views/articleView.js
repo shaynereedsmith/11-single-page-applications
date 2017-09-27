@@ -90,11 +90,10 @@ var app = app || {};
         $('#author-filter').append(article.toHtml('#author-filter-template'));
       }
     });
-    /* TODO: Remember to also remove any invocations of handleMainNav... */
+    /* TODO:DID Remember to also remove any invocations of handleMainNav... */
     articleView.populateFilters();
     articleView.handleCategoryFilter();
     articleView.handleAuthorFilter();
-    articleView.handleMainNav();
     articleView.setTeasers();
     $('pre code').each((i, block) => hljs.highlightBlock(block));
   };
